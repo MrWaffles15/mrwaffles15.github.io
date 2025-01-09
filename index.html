@@ -38,18 +38,33 @@
 
     </style>
     <script>
-      
+      function home(){
+        document.getElementById(home).element.style.display = 'block';
+        document.getElementById(facts).element.style.display = 'none';
+        document.getElementById(faq).element.style.display = 'none';
+        document.getElementById(about).element.style.display = 'none';
+      }
     </script>
   </head>
   <body>
     <div class="topnav">
-      <a class="active" href="#home">Home</a>
+      <button class="active" onclick="home();">Home</a>
       <a href="#news">Facts About DHMO</a>
       <a href="#contact">FAQ</a>
       <a href="#about">About this site</a>
     </div>
-    <div class="home"></div>
+    <div class="home">
     <h1>  Dihydrogen monoxide: the invisible killer</h1>
     <p>    Many people arent aware of the dangers of the chemical dihydrogen monoxide</p>
+    </div>
+    <div class="facts">
+      <h1>Facts about DHMO</h1>
+    </div>
+    <div class="faq">
+      <h1>Frequently asked questions</h1>
+    </div>
+    <div class="about">
+      <h1>About this site</h1>
+    </div>
   </body>
 </html>
