@@ -9,7 +9,7 @@
 }
 
 /* Style the links inside the navigation bar */
-.topnav button {
+.topnav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -19,13 +19,13 @@
 }
 
 /* Change the color of links on hover */
-.topnav button:hover {
+.topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
 /* Add a color to the active/current link */
-.topnav button.active {
+.topnav a.active {
   background-color: #90D5FF;
   color: black;
 }
@@ -37,34 +37,15 @@
       }
 
     </style>
-    <script>
-      function home(){
-        document.getElementById(home).style.display = 'block';
-        document.getElementById(facts).style.display = 'none';
-        document.getElementById(faq).style.display = 'none';
-        document.getElementById(about).style.display = 'none';
-      }
-    </script>
   </head>
   <body>
     <div class="topnav">
-      <button onclick="home();">Home</button>
-      <button onclick="facts();">Facts About DHMO</button>
-      <button href="#contact">FAQ</button>
-      <button href="#about">About this site</button>
+      <a class="active" href='home.html'>Home</a>
+      <a href='facts.html'>Facts About DHMO</a>
+      <a href='faq.html'>FAQ</a>
+      <a href='about.html'>About this site</a>
     </div>
-    <div id="home", style="none">
     <h1>  Dihydrogen monoxide: the invisible killer</h1>
     <p>    Many people arent aware of the dangers of the chemical dihydrogen monoxide</p>
-    </div>
-    <div id="facts">
-      <h1>Facts about DHMO</h1>
-    </div>
-    <div id="faq">
-      <h1>Frequently asked questions</h1>
-    </div>
-    <div id="about">
-      <h1>About this site</h1>
-    </div>
   </body>
 </html>
